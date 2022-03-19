@@ -68,14 +68,21 @@
 										</select>
 									</div>
 								</br>
-									<div class="field half">
-										<input type="radio" id="exact-match" name="dexact-match">
-										<label for="exact-match">Exact match</label>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="checkbox" id="exact-match" name="exact-match">
+											<label for="exact-match">Exact match</label>
+										</div>
+										<div class="field half">
+											<input type="checkbox" id="show-ref" name="show-ref" checked>
+											<label for="show-ref">Show Reflexes</label>
+										</div>
 									</div>
-								</br>
-								<ul class="actions">
-									<li><input type="submit" value="Search" class="primary" /></li>
-								</ul>
+									<ul class="actions">
+										<li><input type="submit" value="Search" class="primary" /></li>
+									</ul>
+								</form>
 								</div>
 								<h3>Results</h3>
 								<div class="output-table">
