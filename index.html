@@ -31,7 +31,7 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Start</a></li>
+								<li><a href="#panbot">Start</a></li>
 								<li><a href="#work">Guide</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
@@ -43,8 +43,8 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
+						<!-- PAnBot -->
+							<article id="panbot">
 								<h2 class="major">PAnBot</h2>
 								<div class="output-table">
 									<table>
@@ -55,7 +55,32 @@
 									</table>
 								</div>
 								<div class="field">
-									<input type="text" name="demo-command" id="demo-command" value="" placeholder="Type your command here" />
+									<input type="text" name="demo-command" id="demo-command" value="" placeholder="Type here" />
+									</br>
+									<div class="field half">
+										<select name="search-field" id="search-field" style="width:50%">
+											<option value="">Search Field</option>
+											<option value="1">All</option>
+											<option value="1">Gloss</option>
+											<option value="1">Form</option>
+										</select>
+									</div>
+								</br>
+									<div class="field half">
+										<input type="radio" id="exact-match" name="dexact-match">
+										<label for="exact-match">Exact match</label>
+									</div>
+								</br>
+									<h3 class="major">Languages</h3>
+									<div class="lang-select" style="height:10rem">
+  									<select name="lang" id="lang" multiple="multiple" style="height:10rem">
+    									<option value="ata">Atayal</option>
+    									<option value="sed">Seediq</option>
+    									<option value="say">SaySiyat</option>
+    									<option value="paz">Pazeh</option>
+											<option value="bun">Bunun</option>
+  									</select>
+									</div>
 								</div></br>
 								<ul class="actions">
 									<li><input type="submit" value="Search" class="primary" /></li>
