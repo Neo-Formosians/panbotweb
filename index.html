@@ -31,8 +31,8 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#panbot">Start</a></li>
-								<li><a href="#work">Guide</a></li>
+								<li><a href="#start">Start</a></li>
+								<li><a href="#guide">Guide</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -43,9 +43,41 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- PAnBot -->
-							<article id="panbot">
-								<h2 class="major">PAnBot</h2>
+						<!-- Start -->
+
+						<article id="start">
+							<h2 class="major">Starting Page</h2>
+							<ul>
+								<li><a href="#panbot-pan">PAn Search</a></li>
+								<li><a href="#panbot-wlist">Wordlist Search</a></li>
+							</ul>
+						</article>
+
+						<!-- PAnBot - PAn -->
+							<article id="panbot-pan">
+								<h2 class="major">PAnBot - PAn Search</h2>
+								<div class="field">
+									<input type="text" name="command-pan" id="command-pan" value="" placeholder="Type here" />
+									</br>
+									<div class="field half">
+										<select name="search-field" id="search-field" style="width:50%">
+											<option value="">Search Field</option>
+											<option value="1">All</option>
+											<option value="1">Gloss</option>
+											<option value="1">Form</option>
+										</select>
+									</div>
+								</br>
+									<div class="field half">
+										<input type="radio" id="exact-match" name="dexact-match">
+										<label for="exact-match">Exact match</label>
+									</div>
+								</br>
+								<ul class="actions">
+									<li><input type="submit" value="Search" class="primary" /></li>
+								</ul>
+								</div>
+								<h3>Results</h3>
 								<div class="output-table">
 									<table>
 										<tbody>
@@ -54,8 +86,13 @@
 											</tr>
 									</table>
 								</div>
+							</article>
+
+						<!-- PAnBot - Wlist -->
+							<article id="panbot-wlist">
+								<h2 class="major">PAnBot - Wordlist Search</h2>
 								<div class="field">
-									<input type="text" name="demo-command" id="demo-command" value="" placeholder="Type here" />
+									<input type="text" name="command-wlist" id="demo-command-wlist" value="" placeholder="Type here" />
 									</br>
 									<div class="field half">
 										<select name="search-field" id="search-field" style="width:50%">
@@ -72,9 +109,9 @@
 									</div>
 								</br>
 									<h3 class="major">Languages</h3>
-									<blockquote>Hold down the Ctrl (Windows) or Command (macOS) button to select multiple options.</blockquote>
-									<div class="lang-select" style="height:10rem">
-  									<select name="lang" id="lang" multiple="multiple" style="height:10rem">
+									<blockquote>Hold down the Ctrl (Windows) or Command (macOS) button to select multiple languages.</blockquote>
+									<div class="lang-select">
+  									<select name="lang" id="lang" multiple="multiple" style="height:20rem">
 											<option value="pan">Proto-Austronesian</option>
 											<option value="aic_pt">Proto-Atayalic</option>
     									<option value="ata">Atayal</option>
@@ -111,6 +148,15 @@
 								<ul class="actions">
 									<li><input type="submit" value="Search" class="primary" /></li>
 								</ul>
+								<h3>Results</h3>
+								<div class="output-table">
+									<table>
+										<tbody>
+											<tr>
+												<td><div id="output" class="output"></div></td>
+											</tr>
+									</table>
+								</div>
 							</article>
 
 						<!-- Work -->
